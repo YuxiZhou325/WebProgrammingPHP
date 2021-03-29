@@ -316,7 +316,7 @@
         <!-- Log In -->
         <div class="page-content" id="login-form">
             <h3 class="text-center">Log In</h3>
-            <form action="home.html">
+            <form action="home.php">
                 <label>
                     <span>YOUR EMAIL ADDRESS</span>
                     <input type="text">
@@ -333,7 +333,7 @@
         <!-- Sign Up -->
         <div class="page-content" id="signup-form" style="display: none;">
             <h3 class="text-center">Sign Up</h3>
-            <form action="home.html">
+            <form action="home.php">
                 <label>
                     <span>EMAIL ADDRESS</span>
                     <input type="text">
