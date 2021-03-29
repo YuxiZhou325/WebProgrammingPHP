@@ -11,7 +11,7 @@
     require('header.php');
     ?>
     <div class="content">
-        <form action='reset.php' method='GET'><button id="reset" name='returnURL' value='1702429/index.php'>Reset DBase</button></form>
+        <form action='reset.php' method='GET'><button id="reset" name='returnURL' value='1702429/index.php'>Reset DataBase</button></form>
         <?php
         session_start();
 
@@ -26,8 +26,8 @@
                 $keyword = $_POST['keyword'];
             }
 
-            $dbname = 'hw17102';
-            $dbuser = 'hw17102';
+            $dbname = 'yz18966';
+            $dbuser = 'yz18966';
             $dbpass = 'obscure';
             $dbhost = 'localhost';
 
@@ -380,4 +380,4 @@
     ?>
 </div>
 </body>
-</html>`
+</html>
