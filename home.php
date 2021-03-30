@@ -43,17 +43,17 @@
             <nav>
                 <ul class="flex">
                     <li>
-                        <a title="HOME" href="home.html">HOME</a>
+                        <a title="HOME" href="index.php">HOME</a>
                     </li>
                     <li>
-                        <a title="ABOUT" href="about.html">ABOUT</a>
+                        <a title="ABOUT" href="about.php">ABOUT</a>
                     </li>
                     <li>
-                        <a title="LIST" href="list.html">LIST</a>
+                        <a title="LIST" href="list.php">LIST</a>
                     </li>
                     <li class="basket">
                         <!-- basket button -->
-                        <a title="basket button" href="cart.html" target="_blank">
+                        <a title="basket button" href="cart.php" target="_blank">
                             <span class="iconfont icon-gouwuche"></span>
                         </a>
                         <!-- login button -->
@@ -105,7 +105,7 @@
         <!-- list -->
         <ul class="flex row">
             <li class="col text-center">
-                <a title="Dancing with Your Ghost" href="details.html" target="_blank">
+                <a title="Dancing with Your Ghost" href="details.php" target="_blank">
                     <img class="w100" src="images/thumbnail.jpg" alt="Dancing with Your Ghost">
                     <h5 class="text-uppercase">Dancing with Your Ghost</h5>
 
@@ -117,7 +117,7 @@
                 </a>
             </li>
             <li class="col text-center">
-                <a title="record" href="details.html" target="_blank">
+                <a title="record" href="details.php" target="_blank">
                     <img class="w100" src="images/thumbnail2.jpg" alt="record">
                     <h5 class="text-uppercase">record</h5>
 
@@ -129,7 +129,7 @@
                 </a>
             </li>
             <li class="col text-center">
-                <a title="record" href="details.html" target="_blank">
+                <a title="record" href="details.php" target="_blank">
                     <img class="w100" src="images/thumbnail3.jpg" alt="record">
                     <h5 class="text-uppercase">record</h5>
 
@@ -141,7 +141,7 @@
                 </a>
             </li>
             <li class="col text-center">
-                <a title="record" href="details.html" target="_blank">
+                <a title="record" href="details.php" target="_blank">
                     <img class="w100" src="images/thumbnail1.jpg" alt="record">
                     <h5 class="text-uppercase">record</h5>
 
@@ -153,7 +153,7 @@
                 </a>
             </li>
             <li class="col text-center">
-                <a title="record" href="details.html" target="_blank">
+                <a title="record" href="details.php" target="_blank">
                     <img class="w100" src="images/thumbnail2.jpg" alt="record">
                     <h5 class="text-uppercase">record</h5>
 
@@ -165,7 +165,7 @@
                 </a>
             </li>
             <li class="col text-center">
-                <a title="record" href="details.html" target="_blank">
+                <a title="record" href="details.php" target="_blank">
                     <img class="w100" src="images/thumbnail3.jpg" alt="record">
                     <h5 class="text-uppercase">record</h5>
 
@@ -313,49 +313,49 @@
         <!-- genres list -->
         <div class="flex row">
             <div class="col">
-                <a title="ROCK" href="details.html">
+                <a title="ROCK" href="details.php">
                     <img class="w100" src="images/genres1.jpg" alt="ROCK">
                     <h4 class="flex">ROCK</h4>
                 </a>
             </div>
             <div class="col">
-                <a title="ELECTRONIC" href="details.html">
+                <a title="ELECTRONIC" href="details.php">
                     <img class="w100" src="images/genres2.jpg" alt="ELECTRONIC">
                     <h4 class="flex">ELECTRONIC</h4>
                 </a>
             </div>
             <div class="col">
-                <a title="JAZZ" href="details.html">
+                <a title="JAZZ" href="details.php">
                     <img class="w100" src="images/genres3.jpg" alt="JAZZ">
                     <h4 class="flex">JAZZ</h4>
                 </a>
             </div>
             <div class="col">
-                <a title="CLASSICAL" href="details.html">
+                <a title="CLASSICAL" href="details.php">
                     <img class="w100" src="images/genres4.jpg" alt="CLASSICAL">
                     <h4 class="flex">CLASSICAL</h4>
                 </a>
             </div>
             <div class="col">
-                <a title="WORLD" href="details.html">
+                <a title="WORLD" href="details.php">
                     <img class="w100" src="images/genres5.jpg" alt="WORLD">
                     <h4 class="flex">WORLD</h4>
                 </a>
             </div>
             <div class="col">
-                <a title="POP" href="details.html">
+                <a title="POP" href="details.php">
                     <img class="w100" src="images/genres6.jpg" alt="POP">
                     <h4 class="flex">POP</h4>
                 </a>
             </div>
             <div class="col">
-                <a title="BLUES" href="details.html">
+                <a title="BLUES" href="details.php">
                     <img class="w100" src="images/genres7.jpg" alt="BLUES">
                     <h4 class="flex">BLUES</h4>
                 </a>
             </div>
             <div class="col">
-                <a title="PUNK" href="details.html">
+                <a title="PUNK" href="details.php">
                     <img class="w100" src="images/genres8.jpg" alt="PUNK">
                     <h4 class="flex">PUNK</h4>
                 </a>
@@ -374,7 +374,7 @@
     <!-- Log In -->
     <div class="page-content" id="login-form">
         <h3 class="text-center">Log In</h3>
-        <form action="home.html">
+        <form action="index.php">
             <label>
                 <span>YOUR EMAIL ADDRESS</span>
                 <input type="text">
@@ -391,7 +391,7 @@
     <!-- Sign Up -->
     <div class="page-content" id="signup-form" style="display: none;">
         <h3 class="text-center">Sign Up</h3>
-        <form action="home.html">
+        <form action="index.php">
             <label>
                 <span>EMAIL ADDRESS</span>
                 <input type="text">

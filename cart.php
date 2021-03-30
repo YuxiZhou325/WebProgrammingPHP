@@ -42,17 +42,17 @@
             <nav>
                 <ul class="flex">
                     <li>
-                        <a title="HOME" href="home.html">HOME</a>
+                        <a title="HOME" href="index.php">HOME</a>
                     </li>
                     <li>
-                        <a title="ABOUT" href="about.html">ABOUT</a>
+                        <a title="ABOUT" href="about.php">ABOUT</a>
                     </li>
                     <li>
-                        <a title="LIST" href="list.html">LIST</a>
+                        <a title="LIST" href="list.php">LIST</a>
                     </li>
                     <li class="basket">
                         <!-- basket button -->
-                        <a title="basket button" href="cart.html" target="_blank">
+                        <a title="basket button" href="cart.php" target="_blank">
                             <span class="iconfont icon-gouwuche"></span>
                         </a>
                         <!-- login button -->
@@ -107,7 +107,7 @@
             </li>
 
             <li class="flex">
-                <a href="details.html" class="img__info__box flex m-w100" target="_blank"
+                <a href="details.php" class="img__info__box flex m-w100" target="_blank"
                    style="justify-content: flex-start;">
                     <div class="imgbox">
                         <img class="w100" src="images/thumbnail1.jpg" alt="thumbnail">
@@ -135,7 +135,7 @@
                 </div>
             </li>
             <li class="flex">
-                <a href="details.html" class="img__info__box flex m-w100" target="_blank"
+                <a href="details.php" class="img__info__box flex m-w100" target="_blank"
                    style="justify-content: flex-start;">
                     <div class="imgbox">
                         <img class="w100" src="images/thumbnail2.jpg" alt="thumbnail">
