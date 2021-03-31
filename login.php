@@ -2,7 +2,6 @@
 <section class="login-area">
 
     <?php
-    // CE154 MySQL+PHP Lab 8 exercises
 
     // Include the library file that contains the database connection and custom functions
     include('inc/lib.php');
@@ -92,15 +91,17 @@
     	}
     }
 
-    ?>
 
+if ( $userkey == "" ) {
+    ?>
     <div class="close">
         <span class="iconfont icon-close5"></span>
     </div>
+
     <!-- Log In -->
     <div class="page-content" id="login-form">
         <h3 class="text-center">Log In</h3>
-        <form action="index.php">
+        <form action="index.php" method="post">
             <label>
                 <span>YOUR USER NAME</span>
                 <input type="text" id="username" name="username">
@@ -109,15 +110,16 @@
                 <span>YOUR PASSWORD</span>
                 <input type="password" id="password" name="password">
             </label>
-            <input type="button" value="LOG IN">
+            <input type="submit" value="LOG IN 12344">
         </form>
         <p>Dot have an account?</p>
         <span class="text-uppercase text-center toggle" data-toggle="signup-form">Create New Account</span>
     </div>
+
     <!-- Sign Up -->
     <div class="page-content" id="signup-form" style="display: none;">
         <h3 class="text-center">Sign Up</h3>
-        <form action="index.php">
+        <form action="index.php" method="post">
             <label>
                 <span>USER NAME</span>
                 <input type="text" id="username_reg" name="username_reg" >
@@ -126,98 +128,16 @@
                 <span>PASSWORD</span>
                 <input type="password" id="password_reg" name="password_reg">
             </label>
-            <input type="button" value="Sign Up">
+            <input type="submit" value="SIGN UP 43211">
         </form>
         <p>Existing user?</p>
         <span class="text-uppercase text-center toggle" data-toggle="login-form">LOG IN</span>
     </div>
 
     <?php
-    // ---
-    /* Retreive the users
-    // ---
-    $sql = "SELECT * FROM users";
-    $result = mysqli_query($conn, $sql);
-
-    echo "Retreive all the users from the database:</br/>";
-
-    // Check there are some results
-    if (mysqli_num_rows($result) > 0) {
-
-    	// There were results so loop through each result
-    	while($row = mysqli_fetch_assoc($result)) {
-    		echo "#" . $row["id"]. " <b>"  . $row["username"] . "</b> [" . $row["firstname"]. " " . $row["lastname"]. "]<br/>";
-    	}
-    } else {
-    	// There were no rows in the table that matched the query
-    	echo "0 results";
+    }else{
+    echo "<br/><br/>Congratulations! You are logged in. Now you can <a href=\"login.php?action=logout\">Logout</a>";
     }
-
-    echo "<br/>";
-    */
-
-
-    // ---
-    /* Insert a user
-    // ---
-    $sql = "INSERT INTO users (username, password, firstname, lastname)
-    			VALUES ('mig21', '1234', 'Harry', 'Styles')";
-
-    if (mysqli_query($conn, $sql)) {
-      echo "New record created successfully!<br/><br/>";
-    } else {
-      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    }
-    */
-
-    // ---
-    /* Update a user
-    // ---
-    $sql = "UPDATE users SET username='ghost21'
-    			WHERE id = 3";
-
-    if (mysqli_query($conn, $sql)) {
-      echo "Record updated successfully!<br/><br/>";
-    } else {
-      echo "Error updating record: " . mysqli_error($conn);
-    }
-    */
-
-
-    // ---
-    /* Delete a user
-    // ---
-    $sql = "DELETE FROM users WHERE id=2";
-
-    if ($conn->query($sql) === TRUE) {
-      echo "Record deleted successfully!<br/><br/>";
-    } else {
-      echo "Error deleting record: " . $conn->error;
-    }
-    */
-
-
-    // ---
-    /* Retreive the users
-    // ---
-    $sql = "SELECT * FROM users WHERE firstname = 'Harry' ORDER BY id DESC LIMIT 3";
-    $result = mysqli_query($conn, $sql);
-
-    echo "Retreive all the users with the firstname Harry:</br/>";
-
-    // Check there are some results
-    if (mysqli_num_rows($result) > 0) {
-
-    	// There were results so loop through each result
-    	while($row = mysqli_fetch_assoc($result)) {
-    		echo "#" . $row["id"]. " <b>"  . $row["username"] . "</b> [" . $row["firstname"]. " " . $row["lastname"]. "]<br/>";
-    	}
-    } else {
-    	// There were no rows in the table that matched the query
-    	echo "0 results";
-    }
-    */
-
 
     // Close the database connection
     mysqli_close($conn);

@@ -499,12 +499,20 @@ header .basket .login {
   margin-bottom: 20px;
 }
 
+.login-area input[type="submit"] {
+  background-color: #ff0068;
+  color: #fff;
+  line-height: 42px;
+  border: 0;
+}
+
 .login-area input[type="button"] {
   background-color: #ff0068;
   color: #fff;
   line-height: 42px;
   border: 0;
 }
+
 
 .login-area p {
   color: #333;

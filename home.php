@@ -383,9 +383,9 @@
                 <span>YOUR PASSWORD</span>
                 <input type="password">
             </label>
-            <input type="button" value="LOG IN">
+            <input type="submit" value="LOG IN">
         </form>
-        <p>Don't have an account?</p>
+        <p>Dont have an account?</p>
         <span class="text-uppercase text-center toggle" data-toggle="signup-form">Create New Account</span>
     </div>
     <!-- Sign Up -->
@@ -400,7 +400,7 @@
                 <span>PASSWORD (MINIMUM 6 CHARACTERS)</span>
                 <input type="password">
             </label>
-            <input type="button" value="Sign Up">
+            <input type="submit" value="Sign Up">
         </form>
         <p>Existing user?</p>
         <span class="text-uppercase text-center toggle" data-toggle="login-form">LOG IN</span>
