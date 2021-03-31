@@ -315,7 +315,7 @@
             <h3 class="text-center">Log In</h3>
             <form action="index.php">
                 <label>
-                    <span>YOUR EMAIL ADDRESS</span>
+                    <span>YOUR USER NAME</span>
                     <input type="text">
                 </label>
                 <label>
@@ -332,7 +332,7 @@
             <h3 class="text-center">Sign Up</h3>
             <form action="index.php">
                 <label>
-                    <span>EMAIL ADDRESS</span>
+                    <span>USER NAME</span>
                     <input type="text">
                 </label>
                 <label>
