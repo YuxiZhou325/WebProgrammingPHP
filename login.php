@@ -19,7 +19,7 @@
     // If we're logging out then clear the session the cookie
     if( $_REQUEST["action"] == "logout" ){
         session_destroy(); // Get rid of the session
-    	header("Location: login.php"); // Redirect to the index page
+    	header("Location: index.php"); // Redirect to the index page
     	exit; // Stop doing anything else on this page
     }
 
