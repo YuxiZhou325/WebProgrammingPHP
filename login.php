@@ -30,10 +30,12 @@
     		// Set the variables
     		$username_reg = $_POST['username_reg'];
     		$password_reg = md5($_POST['password_reg']); // Encrypt the password to MD5
+    		$firstname_reg = $_POST['firstname_reg'];
+    		$lastname_reg = $_POST['lastname_reg'];
 
     		// Insert the user into the table
     		$sql = "INSERT INTO users (username, password, firstname, lastname)
-    					VALUES ('$username_reg', '$password_reg', '', '')";
+    					VALUES ('$username_reg', '$password_reg', '$firstname_reg', '$lastname_reg')";
 
     		// Run the query
     		mysqli_query($conn, $sql);
@@ -43,7 +45,7 @@
 
     		// Tell the user what happened
     		if ( $user_id_new != "" ) {
-    		  echo "New record created successfully!<br/><br/>";
+    		  echo "New user created successfully!<br/><br/>";
     		} else {
     		  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     		}
@@ -103,11 +105,11 @@ if ( $userkey == "" ) {
         <h3 class="text-center">Log In</h3>
         <form action="index.php" method="post">
             <label>
-                <span>YOUR USER NAME</span>
+                <span>USER NAME</span>
                 <input type="text" id="username" name="username">
             </label>
             <label>
-                <span>YOUR PASSWORD</span>
+                <span>PASSWORD</span>
                 <input type="password" id="password" name="password">
             </label>
             <input type="submit" value="LOG IN 12344">
@@ -128,6 +130,14 @@ if ( $userkey == "" ) {
                 <span>PASSWORD</span>
                 <input type="password" id="password_reg" name="password_reg">
             </label>
+            <label>
+                <span>FIRST NAME</span>
+                <input type="text" id="firstname_reg" name="firstname_reg" >
+            </label>
+            <label>
+                <span>LAST NAME</span>
+                <input type="text" id="lastname_reg" name="lastname_reg" >
+            </label>
             <input type="submit" value="SIGN UP 43211">
         </form>
         <p>Existing user?</p>
@@ -136,7 +146,7 @@ if ( $userkey == "" ) {
 
     <?php
     }else{
-    echo "<br/><br/>Congratulations! You are logged in. Now you can <a href=\"login.php?action=logout\">Logout</a>";
+    echo "<br/><br/>Congratulations! You are logged in. Now you can <a href=\"index.php\">Logout</a>";
     }
 
     // Close the database connection
