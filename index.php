@@ -1,3 +1,7 @@
+<!--
+    Student ID:LINYU80007
+    Image source: All images are from Google Image Search
+-->
 <?php
 // Set the page name
 $page_name = "HOME";

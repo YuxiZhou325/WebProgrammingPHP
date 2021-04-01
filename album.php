@@ -1,9 +1,13 @@
+<!--
+    Student ID:LINYU80007
+    Image source: All images are from Google Image Search
+-->
 <!-- album-area Start-->
 <section class="album-area pt100">
 <div class="container">
 <?php
 
-    // Start the user session
+    // Start the item session
     session_start();
 
     // Get the SESSION superglobal variable
