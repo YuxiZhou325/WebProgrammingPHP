@@ -93,6 +93,11 @@ h6 {
   width: 100%;
 }
 
+.thumbnail{
+  width:  150px;
+  height: 150px;
+}
+
 .e {
   overflow: hidden;
   -o-text-overflow: ellipsis;

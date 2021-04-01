@@ -3,13 +3,6 @@
 
     <?php
 
-    // Include the library file that contains the database connection and custom functions
-    include('inc/lib.php');
-
-    // Connect to the database
-    connect();
-
-
     // Start the user session
     session_start();
 

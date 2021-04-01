@@ -58,9 +58,9 @@
                         <?php if ( $page_name == "ABOUT") { echo "</em>";}?>
                     </li>
                     <li>
-                        <?php if ( $page_name == "LIST") { echo "<em>";}?>
-                        <a title="LIST" href="list.php">LIST</a>
-                        <?php if ( $page_name == "LIST") { echo "</em>";}?>
+                        <?php if ( $page_name == "STORE") { echo "<em>";}?>
+                        <a title="STORE" href="store.php">STORE</a>
+                        <?php if ( $page_name == "STORE") { echo "</em>";}?>
                     </li>
                     <li class="basket">
                         <!-- basket button -->

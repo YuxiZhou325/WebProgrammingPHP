@@ -48,7 +48,7 @@
                         <a title="ABOUT" href="about.php">ABOUT</a>
                     </li>
                     <li>
-                        <a title="LIST" href="list.php">LIST</a>
+                        <a title="STORE" href="store.php">STORE</a>
                     </li>
                     <li class="basket">
                         <!-- basket button -->

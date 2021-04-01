@@ -5,7 +5,7 @@
 
 <?php
 // Set the page name
-$page_name = "LIST";
+$page_name = "STORE";
 include('header.php');
 include('breadcrumb.php');
 include('filter.php');
