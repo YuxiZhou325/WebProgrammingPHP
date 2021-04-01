@@ -12,7 +12,7 @@
     <title>CE154</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <!-- Link Swiper's CSS -->
+    <!-- Link Swipers CSS -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- Link iconfont CSS -->
     <link rel="stylesheet" href="font/iconfont.css">
@@ -23,6 +23,21 @@
 </head>
 
 <body>
+
+<?php
+    include('inc/lib.php');
+    // Connect to the database
+    connect();
+    // Start the user session
+    session_start();
+
+    // Get the SESSION superglobal variable
+    $userkey = $_SESSION['users'];
+
+    $sql = "SELECT * FROM users";
+    $result = mysqli_query($conn, $sql);
+?>
+
 <!-- header-nav Start -->
 <header style="position: relative;background-color: #ff0068;">
     <div class="container">
@@ -42,13 +57,23 @@
             <nav>
                 <ul class="flex">
                     <li>
+                        <?php
+                        if ( $page_name == "HOME") { echo "<em style='font-size:150%;'>";}
+                        ?>
                         <a title="HOME" href="index.php">HOME</a>
+                        <?php
+                        if ( $page_name == "HOME") { echo "</em>";}
+                        ?>
                     </li>
                     <li>
+                        <?php if ( $page_name == "ABOUT") { echo "<em style='font-size:150%;'>";}?>
                         <a title="ABOUT" href="about.php">ABOUT</a>
+                        <?php if ( $page_name == "ABOUT") { echo "</em>";}?>
                     </li>
                     <li>
+                        <?php if ( $page_name == "STORE") { echo "<em style='font-size:150%;'>";}?>
                         <a title="STORE" href="store.php">STORE</a>
+                        <?php if ( $page_name == "STORE") { echo "</em>";}?>
                     </li>
                     <li class="basket">
                         <!-- basket button -->
@@ -57,7 +82,8 @@
                         </a>
                         <!-- login button -->
                         <a title="login button" href="javascript:;">
-                            Jack <span class="iconfont icon-down" style="font-size: 15px;"></span>
+                            yl19022
+                            <span class="iconfont icon-down" style="font-size: 15px;"></span>
                         </a>
                     </li>
                 </ul>
@@ -110,25 +136,24 @@
                 <a href="details.php" class="img__info__box flex m-w100" target="_blank"
                    style="justify-content: flex-start;">
                     <div class="imgbox">
-                        <img class="w100" src="images/thumbnail1.jpg" alt="thumbnail">
+                        <img class="w100" src="https://upload.wikimedia.org/wikipedia/en/6/6e/Pink_Floyd_-_Division_Bell.jpg" alt="thumbnail">
                     </div>
                     <div class="info">
                         <h6>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nulla natus modi
-                            nostrum
+                            Division Bell - Pink Floyd
                         </h6>
                     </div>
                 </a>
                 <div class="unit-price w15">
-                    $888.00
+                    £35.00
                 </div>
                 <div class="Qty flex">
                     <span class="iconfont icon-reduce"></span>
-                    <input class="num" data-price="888.00" type="text" name="qty" value="1">
+                    <input class="num" data-price="35.00" type="text" name="qty" value="1">
                     <span class="iconfont icon-plus"></span>
                 </div>
-                <div class="Subtotal w15" data-price="888.00">
-                    $888.00
+                <div class="Subtotal w15" data-price="358.00">
+                    £35.00
                 </div>
                 <div class="text-center w15">
                     <a href="javascript:;">Remove</a>
@@ -138,25 +163,24 @@
                 <a href="details.php" class="img__info__box flex m-w100" target="_blank"
                    style="justify-content: flex-start;">
                     <div class="imgbox">
-                        <img class="w100" src="images/thumbnail2.jpg" alt="thumbnail">
+                        <img class="w100" src="https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg" alt="thumbnail">
                     </div>
                     <div class="info">
                         <h6>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nulla natus modi
-                            nostrum
+                            Abbey Road - The Beatles
                         </h6>
                     </div>
                 </a>
                 <div class="unit-price w15">
-                    $888.00
+                    £20.99
                 </div>
                 <div class="Qty flex">
                     <span class="iconfont icon-reduce"></span>
-                    <input class="num" data-price="888.00" type="text" name="qty" value="1">
+                    <input class="num" data-price="20.99" type="text" name="qty" value="1">
                     <span class="iconfont icon-plus"></span>
                 </div>
-                <div class="Subtotal w15" data-price="888.00">
-                    $888.00
+                <div class="Subtotal w15" data-price="20.99">
+                    £20.99
                 </div>
                 <div class="text-center w15">
                     <a href="javascript:;">Remove</a>
@@ -169,7 +193,7 @@
                 <div class="unit-price w15"></div>
                 <div class="Qty" style="width: 15%;"></div>
                 <div class="total-price" style="width: 10%;">
-                    <span id="total-price">$1776.00</span>
+                    <span id="total-price">£55.99</span>
                 </div>
                 <div class="text-center w15 flex text-uppercase Check_out" style="justify-content: center;">
                     Check out
@@ -190,7 +214,7 @@
         $('.Subtotal.w15').each(function () {
             Total = Total + parseInt($(this).data('price'))
         })
-        $('#total-price').text('$' + Total.toFixed(2))
+        $('#total-price').text('£' + Total.toFixed(2))
     }
 
     // Increase decrease quantity
@@ -205,7 +229,7 @@
             n++
         }
         $(this).siblings('input').val(n)
-        $totalPrice.text('$' + (price * n).toFixed(2))
+        $totalPrice.text('£' + (price * n).toFixed(2))
         $totalPrice.data('price', (price * n).toFixed(2))
 
         totalPrice()
@@ -215,7 +239,7 @@
         var n = $(this).val()
         var price = $(this).data('price')
         var $totalPrice = $(this).parent().siblings('.Subtotal')
-        $totalPrice.text('$' + (price * n).toFixed(2))
+        $totalPrice.text('£' + (price * n).toFixed(2))
         $totalPrice.data('price', (price * n).toFixed(2))
 
         totalPrice()

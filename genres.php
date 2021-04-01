@@ -52,9 +52,9 @@
                 </a>
             </div>
             <div class="col">
-                <a title="PUNK" href="details.php">
-                    <img class="w100" src="images/genres8.jpg" alt="PUNK">
-                    <h4 class="flex">PUNK</h4>
+                <a title="HIP POP" href="details.php">
+                    <img class="w100" src="images/genres8.jpg" alt="HIP POP">
+                    <h4 class="flex">HIP POP</h4>
                 </a>
             </div>
         </div>

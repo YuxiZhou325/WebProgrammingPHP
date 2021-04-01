@@ -13,29 +13,22 @@
                 <div class="swiper-slide">
                     <span class="iconfont icon-baojiaquotation2"></span>
                     <img src="images/thumbnail1.jpg" alt="head sculpture">
-                    <h4>Lorem ipsum</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex repellat voluptas
-                        facilis
-                        iusto id inventore nihil similique recusandae, architecto aut, eum commodi, rem quas!
-                        Necessitatibus aliquam incidunt soluta quae?</p>
+                    <h4>Hanna Barack</h4>
+                    <p>I have been searching Maroon5 V album on internet for so long and finally I got it here at Jonathon records shop! I am so excited!</p>
                     <span class="iconfont icon-baojiaquotation"></span>
                 </div>
                 <div class="swiper-slide">
                     <span class="iconfont icon-baojiaquotation2"></span>
                     <img src="images/thumbnail2.jpg" alt="head sculpture">
-                    <h4>Lorem ipsum</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo dignissimos
-                        molestiae obcaecati. Perferendis, quos, aliquid ab harum deserunt officiis enim nesciunt
-                        consequuntur veritatis doloribus totam voluptas nihil adipisci facere?</p>
+                    <h4>Arron Ben</h4>
+                    <p>The album is lit!</p>
                     <span class="iconfont icon-baojiaquotation"></span>
                 </div>
                 <div class="swiper-slide">
                     <span class="iconfont icon-baojiaquotation2"></span>
                     <img src="images/thumbnail3.jpg" alt="head sculpture">
-                    <h4>Lorem ipsum</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sit repudiandae
-                        recusandae facilis ex. Aperiam non accusantium, recusandae repudiandae dolores pariatur
-                        omnis iste dolorem ratione vel fugit quis suscipit dignissimos.</p>
+                    <h4>Clack Daniel</h4>
+                    <p>I like how they arrange all the albums in the stroe and they are easy to look up! I found some of my favourite ones here! Very good shopping experience!</p>
                     <span class="iconfont icon-baojiaquotation"></span>
                 </div>
             </div>

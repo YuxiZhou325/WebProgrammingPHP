@@ -6,7 +6,7 @@
     <div class="left">
         <ul>
             <li  class="active">
-                <a href="rock.php">ROCK</a>
+                <span href="rock.php">ROCK</span>
             </li>
             <li>
                 <a href="pop.php">POP</a>
@@ -40,7 +40,7 @@
     // Get the SESSION superglobal variable
     $userkey = $_SESSION['item_info'];
 
-    $sql = "SELECT * FROM item_info";
+    $sql = "SELECT * FROM item_info WHERE item_info.category='Rock'";
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) > 0 ) {
@@ -58,6 +58,7 @@
                         echo "<!-- title -->";
                         echo "<h6 class='text-uppercase e'>".$row['name']."</h6>";
                         echo "<!-- description -->";
+                        echo "<strong><p>".$row['published_date']."</p></strong>";
                         echo "<p class='ee'>".$row['description']."</p>";
                         echo "<div class='flex'>";
                             echo "<div class='price'>".$row['price']."</div>";

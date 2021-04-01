@@ -6,23 +6,14 @@
                 <img class="w100" src="images/me.jpg" alt="JONATHON DOE">
             </div>
             <div class="right m-w100 m-pl0 m-mt30">
-                <h2 class="text-uppercase">HELLO! I AM JONATHON DOE</h2>
-                <span>Famous musicians</span>
+                <h2 class="text-uppercase">HELLO! WE ARE JONATHON RECORDS</h2>
+                <span>Top5 Records Shop in UK</span>
                 <div class="info">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste perspiciatis modi
-                        sapiente est repellendus nam at qui sit pariatur, quas fugit distinctio minima,
-                        consectetur, illo voluptas! Aperiam, maxime sunt?
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium odio eveniet neque
-                        vero illo ab voluptatum ut veniam dolorum esse assumenda ipsam doloremque, mollitia
-                        deserunt corrupti a. Ut, iusto quis!
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatum ad quibusdam
-                        assumenda. Magnam ad minus, sint tempore est beatae soluta nihil ut assumenda in illo
-                        ducimus iusto voluptatem quos?
+                        Jonathon Records is a company doing records retail with a wide range and reasonable prices.
+                        So although music in all its formats is still popular, record shops are not a dead cert by any means,
+                        the internet and mail order are viable alternatives to basing our business in a shop.
+
                     </p>
                 </div>
             </div>

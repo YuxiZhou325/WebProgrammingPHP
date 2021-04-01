@@ -5,11 +5,11 @@
     <!-- Sidebar -->
     <div class="left">
         <ul>
-            <li  class="active">
+            <li>
                 <a href="rock.php">ROCK</a>
             </li>
-            <li>
-                <a href="pop.php">POP</a>
+            <li  class="active">
+                <span href="pop.php">POP</span>
             </li>
             <li>
                 <span>HIP POP</span>
@@ -33,6 +33,7 @@
     </div>
     <!-- Sidebar end -->
 
+
 <?php
     // Start the user session
     session_start();
@@ -40,7 +41,7 @@
     // Get the SESSION superglobal variable
     $userkey = $_SESSION['item_info'];
 
-    $sql = "SELECT * FROM item_info";
+    $sql = "SELECT * FROM item_info WHERE item_info.category='Pop'";
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) > 0 ) {
@@ -58,6 +59,7 @@
                         echo "<!-- title -->";
                         echo "<h6 class='text-uppercase e'>".$row['name']."</h6>";
                         echo "<!-- description -->";
+                        echo "<strong><p>".$row['published_date']."</p></strong>";
                         echo "<p class='ee'>".$row['description']."</p>";
                         echo "<div class='flex'>";
                             echo "<div class='price'>".$row['price']."</div>";

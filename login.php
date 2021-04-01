@@ -105,7 +105,7 @@ if ( $userkey == "" ) {
                 <span>PASSWORD</span>
                 <input type="password" id="password" name="password">
             </label>
-            <input type="submit" value="LOG IN 12344">
+            <input type="submit" value="LOG IN">
         </form>
         <p>Dot have an account?</p>
         <span class="text-uppercase text-center toggle" data-toggle="signup-form">Create New Account</span>
@@ -131,7 +131,7 @@ if ( $userkey == "" ) {
                 <span>LAST NAME</span>
                 <input type="text" id="lastname_reg" name="lastname_reg" >
             </label>
-            <input type="submit" value="SIGN UP 43211">
+            <input type="submit" value="SIGN UP">
         </form>
         <p>Existing user?</p>
         <span class="text-uppercase text-center toggle" data-toggle="login-form">LOG IN</span>
