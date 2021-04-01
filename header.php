@@ -45,7 +45,7 @@
                 <ul class="flex">
                     <li>
                         <?php
-                        if ( $page_name == "HOME") { echo "<em>";}
+                        if ( $page_name == "HOME") { echo "<em style='font-size:150%;'>";}
                         ?>
                         <a title="HOME" href="index.php">HOME</a>
                         <?php
@@ -53,12 +53,12 @@
                         ?>
                     </li>
                     <li>
-                        <?php if ( $page_name == "ABOUT") { echo "<em>";}?>
+                        <?php if ( $page_name == "ABOUT") { echo "<em style='font-size:150%;'>";}?>
                         <a title="ABOUT" href="about.php">ABOUT</a>
                         <?php if ( $page_name == "ABOUT") { echo "</em>";}?>
                     </li>
                     <li>
-                        <?php if ( $page_name == "STORE") { echo "<em>";}?>
+                        <?php if ( $page_name == "STORE") { echo "<em style='font-size:150%;'>";}?>
                         <a title="STORE" href="store.php">STORE</a>
                         <?php if ( $page_name == "STORE") { echo "</em>";}?>
                     </li>

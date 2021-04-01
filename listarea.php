@@ -6,7 +6,7 @@
         <div class="left">
             <ul>
                 <li  class="active">
-                    <span>ROCK</span>
+                    <span href="rock.php">ROCK</span>
                 </li>
                 <li>
                     <span>ELECTRONIC</span>
@@ -32,6 +32,9 @@
             </ul>
         </div>
         <!-- Sidebar end -->
+
+<?php
+
 
         <div class="right m-w100">
             <!-- list content -->

@@ -19,7 +19,7 @@ function connect(){
     if  (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     } else {
-		echo "Successfully connected to the MySQL database!<br/><br/>";
+		echo "Successfully connected to the MySQL database!";
 	}
 
     return $conn;
