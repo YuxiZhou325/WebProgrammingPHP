@@ -5,13 +5,13 @@
         <!-- Sidebar -->
         <div class="left">
             <ul>
-                <li>
+                <li  class="active">
                     <span>ROCK</span>
                 </li>
                 <li>
                     <span>ELECTRONIC</span>
                 </li>
-                <li class="active">
+                <li>
                     <span>JAZZ</span>
                 </li>
                 <li>
